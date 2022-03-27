@@ -1,0 +1,163 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#footer,
+#navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  color: white;
+  background-color: rgb(53, 52, 52);
+}
+
+#logo__link {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo__link img {
+  width: 80%;
+}
+
+#navigation__links {
+  display: flex;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 500px;
+}
+
+#navigation__links li {
+  list-style: none;
+}
+
+#navigation__links li a {
+  color: rgb(156, 209, 95);
+  text-decoration: none;
+}
+
+#navigation__login--container {
+  margin-right: 20px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#navigation__login--container input {
+  padding: 10px 20px;
+}
+
+#navigation__login--container button {
+  padding: 8px 20px;
+  color: white;
+  background-color: rgb(156, 209, 95);
+  font-size: 1.2rem;
+  border: none;
+}
+
+#signup-link {
+  position: absolute;
+  top: 60px;
+  right: 30px;
+}
+
+#navigation__login--container button:hover {
+  cursor: pointer;
+  background-color: rgb(211, 240, 178);
+}
+
+#navigation__login--container a {
+  color: rgb(156, 209, 95);
+  margin: 10px;
+  text-decoration: none;
+}
+
+#navigation__login--container a:hover,
+#navigation__links li a:hover {
+  color: rgb(211, 240, 178);
+}
+
+#login__message--container {
+  position: absolute;
+  right: 400px;
+  color: rgb(230, 161, 161);
+  top: 70px;
+}
+
+/*Main page*/
+#logged-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Signup*/
+#signup-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#signup-page h1 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+#signup-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+#signup-page form input {
+  padding: 10px 20px;
+  margin-top: 5px;
+}
+
+#signup-page form button {
+  padding: 10px 20px;
+  margin-top: 5px;
+  background-color: rgb(156, 209, 95);
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+}
+
+#signup-page form button:hover {
+  background-color: rgb(211, 240, 178);
+  cursor: pointer;
+  color: black;
+  transition: 0.4s;
+}
+
+.error__message {
+  color: rgb(223, 163, 163);
+  margin-top: 10px;
+}
+
+.success__message {
+  color: rgb(149, 212, 119);
+  margin-top: 10px;
+}
